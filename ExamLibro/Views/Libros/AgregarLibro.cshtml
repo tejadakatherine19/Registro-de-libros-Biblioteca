@@ -1,0 +1,104 @@
+﻿@model ExamLibro.Models.Libro
+@{
+    ViewBag.Title = "AgregarLibro";
+}
+
+<section class="full-reset" style="background-color: #fff; padding: 20px 0;">
+    <div class="container">
+        <div class="row">
+            <section class="">
+                <div class="jumbotron">
+                    <h2 class="text-center titles">Agregar Libros</h2>
+                    <p class="text-center lead">
+                        En la siguiente seccion se hace el registro de los libros que seran almacenados en el sitio web.
+                    </p>
+                </div>
+                <!--======================================== General ========================================-->
+                <article class="full-reset" id="b-general">
+                    <div class="page-header" style="margin-bottom:40px;">
+                        <h2><i class="fa fa-book"></i> &nbsp; Libros</h2>
+                    </div>
+
+
+                    <div class="table-responsive">
+                        @using (Html.BeginForm("AgregarLibro", "Libros", FormMethod.Post))
+                        {
+                            <table class="table table-condensed table-responsivetable-bordered">
+                                <tr>
+                                    <td>Id:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Id, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.Id, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.ISBN, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.ISBN, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Titulo:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Titulo, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.Titulo, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Número de páginas:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.NumPaginas, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.NumPaginas, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Editorial:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Editorial, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.Editorial, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Autor:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Autor, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.Autor, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Fecha de publicación:</td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.FechaPubli, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.FechaPubli, null, new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <center>
+                                            <button class="btn btn-success"> Registrar </button>
+                                        </center>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+                        }
+                    </div>
+                </article>
+
+
+
+            </section>
+
+
+        </div>
+    </div>
+</section>
+

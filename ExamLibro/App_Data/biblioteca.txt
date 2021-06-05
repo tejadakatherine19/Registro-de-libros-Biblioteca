@@ -1,0 +1,3 @@
+<tr><td>LIB001</td><td>879-89809-1098-687</td><td>Romeo y Julieta</td><td>80</td><td>España</td><td>William Shakeaspeare</td><td>4/3/2021 10:51:00</td></tr>
+<tr><td>LIB001</td><td>879-89809-1098-687</td><td>Romeo y Julieta</td><td>80</td><td>España</td><td>William Shakeaspeare</td><td>4/3/2021 10:53:00</td></tr>
+<tr><td>LIB001</td><td>879-89809-1090-687</td><td>Hamlet</td><td>45</td><td>España</td><td>William Shakeaspeare</td><td>7/2/2021 12:36:00</td></tr>

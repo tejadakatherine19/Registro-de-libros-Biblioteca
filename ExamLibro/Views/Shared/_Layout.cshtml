@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+    <link rel="stylesheet" href="~/Plantilla/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Plantilla/css/normalize.css">
+    <link rel="stylesheet" href="~/Plantilla/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="~/Plantilla/css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="~/Plantilla/js/modernizr.js"></script>
+    <script src="~/Plantilla/js/bootstrap.min.js"></script>
+    <script src="~/Plantilla/js/main.js"></script>
+</head>
+<body>
+ 
+
+    <header class="full-reset header">
+        <!--======================================== Logo(Nombre INS) ========================================-->
+        <div class="full-reset logo">
+            <span class="hidden-lg hidden-md">Biblio</span>
+            <span class="hidden-xs hidden-sm">Biblioteca</span>
+        </div>
+        <!--======================================== Links de navegación ========================================-->
+        <nav class="full-reset navigation">
+            <ul class="full-reset list-unstyled">
+                <li>@Html.ActionLink("Inicio", "Index", "Libros")</li>
+                <li>@Html.ActionLink("Registrar Libro", "AgregarLibro", "Libros")</li>
+                <li>@Html.ActionLink("Mostrar Libros", "MostrarLibro", "Libros")</li>
+
+
+            </ul>
+        </nav>
+        <!--======================================== Mega menu ========================================-->
+        <!--======================================== Boton menu mobil ========================================-->
+        <a href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v"></i></a>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="full-reset footer">
+            <div class="full-reset" style="padding: 15px 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <h4 class="titles text-center">Visitenos en</h4>
+                            <p class="text-center">Soyapango, San Salvador</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h4 class="titles text-center">Contactenos</h4>
+                            <p class="text-center">Telefono: +(503)7238-4363 <br>Correo Electrónico: tejadakatherine@gmail.com</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h4 class="titles subtitles-footer">Siguenos en</h4>
+                            <ul class="list-unstyled links-footer">
+                                <li><a href="https://github.com/tejadakatherine19" class="open-link-newTab"><i class="fa fa-github"></i> &nbsp; Github</a></li>
+                                <li><a href="https://twitter.com/KathTejada19?s=08" class="open-link-newTab"><i class="fa fa-twitter"></i> &nbsp; Twitter</a></li>
+                                <li><a href="https://www.linkedin.com/in/katherine-esmeralda" class="open-link-newTab"><i class="fa fa-linkedin"></i> &nbsp; Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="full-reset footer-copyright"><i class="fa fa-copyright"></i> 2021 Katherine Tejada</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

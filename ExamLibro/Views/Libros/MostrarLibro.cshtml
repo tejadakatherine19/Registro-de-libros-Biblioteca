@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "MostrarLibro";
+}
+
+<section class="full-reset" style="background-color: #fff; padding: 20px 0;">
+    <div class="container">
+        <div class="row">
+            <section class="">
+                <div class="jumbotron">
+                    <h2 class="text-center titles">Listado de Libros</h2>
+                    <p class="text-center lead">
+                        En la siguiente seccion se pueden apreciar todos los libros que se encuentran almacenados en el sitio web.
+                    </p>
+                </div>
+                <!--======================================== General ========================================-->
+                <article class="full-reset" id="b-general">
+                    <div class="page-header" style="margin-bottom:40px;">
+                        <h2><i class="fa fa-book"></i> &nbsp; Libros</h2>
+                    </div>
+                    <a href="/Libros/Imprimir" class="btn btn-danger">Descargar PDF</a>
+                    <br>
+                   
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered text-center">
+                            <thead>
+                                <tr class="info">
+                                    <th class="text-center">Id</th>
+                                    <th class="text-center">ISBN</th>
+                                    <th  class="text-center">Titulo</th>
+                                    <th  class="text-center">Numero de paginas</th>
+                                    <th  class="text-center">Editorial</th>
+                                    <th  class="text-center">Autor</th>
+                                    <th  class="text-center">Fecha de publicacion</th>
+                                </tr>
+                                
+                            </thead>
+                            <tbody>
+                                <tr class="success">
+                                    @Html.Raw(ViewData["lib"])
+                                </tr>
+                                
+                               
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+
+
+            </section>
+
+
+        </div>
+    </div>
+</section>
+
+
+

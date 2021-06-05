@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<section class="full-reset font-cover" style="background-image: url(/Plantilla/assets/img/font-index.jpg);">
+    <div class="full-reset" style="height: 100%; background-color: rgba(255,255,255,.6); padding: 60px 0;">
+        <h1 class="text-center titles">Biblioteca</h1>
+        <figure class="Logo-Ins-Index">
+            <img src="~/Plantilla/assets/img/book.png" alt="Logo" class="img-responsive">
+        </figure>
+        <p class="lead text-center">
+            "Biblioteca, un espacio creado para el registro de libros"
+        </p>
+    </div>
+</section>
+<div class="divider-general"></div>
+<!--======================================== Video corto & carrusel========================================-->
+<section class="full-reset" style="background-color: rgb(242, 242, 242); padding: 40px 0;">
+    <div class="container">
+        <h2 class="text-center titles">Objetivo</h2>
+        <br><br>
+        <!--======================================== Carrusel ========================================-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                <h3 class="text-center titles">Libros Biblioteca</h3>
+                <p class="lead">
+                    El objetivo principal de este sitio, es registrar y visualizar los diferentes libros que posee la biblioteca, con el fin de llevar un registro digitalizado, asi como tambien poder imprimir esos registros en caso de ser necesarios.
+
+                </p>
+                
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                <div id="slider-ins" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider-ins" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider-ins" data-slide-to="1"></li>
+                        <li data-target="#slider-ins" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Imagenes -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!-- Primera imagen -->
+                        <div class="item active">
+                            <img src="~/Plantilla/assets/gallery/libro1.jpg" alt="Default">
+                            <div class="carousel-caption">
+                                Romeo Y Julieta
+                            </div>
+                        </div>
+
+                        <!-- Segunda imagen -->
+                        <div class="item">
+                            <img src="~/Plantilla/assets/gallery/libro2.jpg" alt="Default">
+                            <div class="carousel-caption">
+                                El Fantasma de la Opera
+                            </div>
+                        </div>
+
+                        <!-- Tercera imagen -->
+                        <div class="item">
+                            <img src="~/Plantilla/assets/gallery/foto3.jpg" alt="Default">
+                            <div class="carousel-caption">
+                                Asesinato en el Oriente Express
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Controles -->
+                    <a class="left carousel-control" href="#slider-ins" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#slider-ins" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="divider-general"></div>
+        <br>
+
+
+    </div>
+</section>
+
+<!--======================================== Enlaces importantes ========================================-->
+<section class="text-center important-links-index">
+    <h2 class="titles">Sitios y enlaces importantes</h2>
+
+
+    <a href="https://libros.metabiblioteca.org/" class="open-link-newTab">
+        <i class="fa fa-globe"></i>
+        <p>Biblioteca Digital</p>
+    </a>
+
+    <a href="#!" class="open-link-newTab">
+        <i class="fa fa-download"></i>
+        <p>Descargas</p>
+    </a>
+</section>
